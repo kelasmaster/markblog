@@ -33,6 +33,29 @@ nav a {
     }
 }
 
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.post-list h3 {
+    margin: 0.5rem 0;
+}
+
+.post-list a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
+}
 /* Responsive Images */
 img {
     max-width: 100%;
