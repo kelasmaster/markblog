@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    {{> header}}
+    
+    <div class="content">
+        {{{content}}}
+        
+        <h2>Latest Posts</h2>
+        <ul class="post-list">
+            {{#each posts}}
+            <li>
+                <h3><a href="/posts/{{this.slug}}.html">{{this.title}}</a></h3>
+                <p>{{this.description}}</p>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    
+    {{> footer}}
+</body>
+</html>
