@@ -1,0 +1,6 @@
+/node_modules
+/posts/*.md
+/*.md
+/layouts
+/includes
+build.js
