@@ -46,3 +46,9 @@ const posts = fs.readdirSync(postsDir)
         }
     });
 });
+
+// At the bottom of build.js where you write files:
+fs.writeFileSync(
+    path.join(dir === '.' ? 'docs' : 'docs/posts', outputFilename), 
+    html
+);
